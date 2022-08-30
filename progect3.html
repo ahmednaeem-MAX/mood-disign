@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>progect3</title>
+<link rel="stylesheet" type="text/css" href="world.css">	
+</head>
+<body>
+	
+
+	<header id="header">
+		<h1><a href="#" class="logo">nouvil</a></h1>
+		
+		<ul>
+			<li><a href="#" class="active">home</a></li>
+			<li><a href="#">about</a></li>
+			<li><a href="#">help</a></li>
+			<li><a href="#">more</a></li>
+			<li><a href="#">login</a></li>
+		</ul>	
+	</header>
+
+    <section class="main">
+		<img id="stars" src="img/stars1.png">
+		<h1 class="nouvil">nouvil</h2>
+        <img id="moon" src="img/moon2.png">
+        <img id="mountains3" src="img/mountains3.png">
+		<img id="mountains4" src="img/mountains4.png">
+		<img id="river" src="img/river5.png">
+		<img id="boat6" src="img/boat6.png">
+		<img id="mountains7" src="img/mountains7.png">
+
+	</section>
+	<div class="content">
+		<h1> Lorem ipsum dolor sit amet. </h1>
+
+		<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+					<p> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			
+	
+	</div>
+		
+</section>
+
+<script>
+	
+
+	let stars = document.getElementById('stars');
+	let moon = document.getElementById('moon');
+	let mountains3 = document.getElementById('mountains3');
+	let mountains4 = document.getElementById('mountains4');
+	let river = document.getElementById('river');
+	let boat6 = document.getElementById('boat6');
+	let nouvil = document.querySelector('.nouvil');
+			
+	window.onscroll = function(){
+		let value = scrollY;
+		stars.style.left = value + 'px' ;
+		moon.style.top = value * 4 + 'px' ;
+		mountains3.style.top  = value * 2 + 'px' ;
+		mountains4.style.top = value * 1.2 + 'px' ;
+        river.style.top = value + 'px' ;
+        boat6.style.top = value + 'px' ;
+        boat6.style.left = value * 3 + 'px' ;
+        nouvil.style.fontSize = value + 'px' ;
+
+
+if(scrollY >= 67){
+	nouvil.style.fontSize = 67 + 'px' ;
+	nouvil.style.position = 'fixed' ;
+
+
+	if(scrollY >= 275){
+	nouvil.style.display = 'none';
+ }else{
+ 	nouvil.style.display = 'block' ;
+ }
+		
+}
+	if(scrollY >= 65) {
+		document.querySelector('.main').style.background = 'linear-gradient(#376281,whitesmoke)';
+
+		// document.querySelector('.main').style.background = 'linear-gradient(#bd9bb1,whitesmoke)';
+	
+	}
+	else{
+		document.querySelector('.main').style.background = 'linear-gradient(#000,#200016)';
+		// document.querySelector('.main').style.background = 'linear-gradient(#bd9bb1,1a0618)';
+
+	}
+ 
+
+ }   
+
+	
+
+		
+			</script>
+			
+	
+
+
+</body>
+</html>
